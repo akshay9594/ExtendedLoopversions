@@ -332,7 +332,6 @@ void construct_matrix_values( MKL_INT nx, MKL_INT ny, MKL_INT nz, double*u, MKL_
                 if ( k > 1 )    {a[num_el-3] = -1.0*(1+0.5*alpha*(u[(k-1)*(nx+1)*(ny+1)+  j  *(nx+1)+  i  ]+t)); } else { a[num_el-3] = 0.0;}
                 if ( j > 1 )    {a[num_el-2] = -1.0*(1+0.5*alpha*(u[  k  *(nx+1)*(ny+1)+(j-1)*(nx+1)+  i  ]+t)); } else { a[num_el-2] = 0.0;}
                 if ( i > 1 )    {a[num_el-1] = -1.0*(1+0.5*alpha*(u[  k  *(nx+1)*(ny+1)+  j  *(nx+1)+(i-1)]+t)); } else { a[num_el-1] = 0.0;}
-                                 a[num_el  ] =  6.0*(1+    alpha* u[  k  *(nx+1)*(ny+1)+  j  *(nx+1)+  i  ]);
                 if ( i < nx-1 ) {a[num_el+1] = -1.0*(1+0.5*alpha*(u[  k  *(nx+1)*(ny+1)+  j  *(nx+1)+(i+1)]+t)); } else { a[num_el+1] = 0.0;}
                 if ( j < ny-1 ) {a[num_el+2] = -1.0*(1+0.5*alpha*(u[  k  *(nx+1)*(ny+1)+(j+1)*(nx+1)+  i  ]+t)); } else { a[num_el+2] = 0.0;}
                 if ( k < nz-1 ) {a[num_el+3] = -1.0*(1+0.5*alpha*(u[(k+1)*(nx+1)*(ny+1)+  j  *(nx+1)+  i  ]+t)); } else { a[num_el+3] = 0.0;}
