@@ -8,6 +8,6 @@ The code is only a representative code showing the inlined version of the loops 
 
 Full source code of miniMD can be found at - [The Mantevo Project](https://github.com/Mantevo/mantevo.github.io/tree/master/download_files)
 
-# Intel MKL Pardiso Non-linear
+# GROMACS - SPEC CPU 2006
 
-Extended version of the loops in Intel MKL Pardiso Non-linear routine
+Extended version of the subscripted subscript loops from subroutine 'clincs' along with the code that fills the subscript array.
